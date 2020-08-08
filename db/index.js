@@ -1,9 +1,11 @@
 const connection = require("./connection");
 
 class employeeDB {
+    
     constructor(connection) {
         this.connection = connection;
     }
+
 
     // Show all employees
     allEmployees() {
@@ -17,21 +19,15 @@ class employeeDB {
         return this.connection.promise().query("INSERT INTO employee SET ?", employee);
     }
 
-    // Delete an employee
-    // deleteEmployee(employeeId) {
-    //     return this.connection.promise().query(
-    //         "DELETE FROM employee WHERE id = ?",
-    //         employeeId
-    //     );
-    // }
 
-    // Find all managers
+    // Show all managers
     allManagers(employeeId) {
         return this.connection.promise().query(
             "SELECT id, first_name, last_name FROM employee WHERE id != ?",
             employeeId
         );
     }
+
 
     // Show all roles
     allRoles() {
@@ -41,7 +37,7 @@ class employeeDB {
     }
 
     // Create a new role
-    createRole(role) {
+    addRole(role) {
         return this.connection.promise().query("INSERT INTO role SET ?", role);
     }
 
