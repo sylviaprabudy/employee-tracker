@@ -4,7 +4,7 @@ A command-line application to manage a company's employee database, using Node.j
 
 ### Github : https://github.com/sylviaprabudy/employee-tracker
 
-### Walkthrough video : https://drive.google.com/file/d/1QHxe-IGnFqFNN0P--pnuzQeDQVm1QqvS/view
+### Walkthrough video : https://drive.google.com/file/d/1OVHuRljNykMYGGzN_b7K1bFK8t8OsJBR/view
 
 
 ## Description
