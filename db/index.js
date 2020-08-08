@@ -1,7 +1,7 @@
 const connection = require("./connection");
 
-class DB {
-    
+class employeeDB {
+
 }
 
-// module.exports = new DB(connection);
+module.exports = new employeeDB(connection);
