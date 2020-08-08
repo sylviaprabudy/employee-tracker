@@ -2,6 +2,7 @@ const { prompt } = require("inquirer");
 const db = require("./db");
 
 
+
 init();
 
 // initial function at NPM start
