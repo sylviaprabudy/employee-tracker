@@ -4,9 +4,7 @@ A command-line application to manage a company's employee database, using Node.j
 
 ### Github : https://github.com/sylviaprabudy/employee-tracker
 
-### Deployed app : 
-
-### Walkthrough video :
+### Walkthrough video : https://drive.google.com/file/d/1QHxe-IGnFqFNN0P--pnuzQeDQVm1QqvS/view
 
 
 ## Description
@@ -41,7 +39,7 @@ A command-line application to manage a company's employee database, using Node.j
 <p><a href="https://dev.mysql.com"></a>MySQL</p>
 <p><a href="https://www.npmjs.com/package/inquirer">Inquirer.js</a></p>
 <p><a href="https://www.npmjs.com/package/mysql2">Node MySQL 2</a></p>
-
+<p><a href="https://www.npmjs.com/package/console.table">console.table</a></p>
 
 
 ## Contributor:
