@@ -50,7 +50,7 @@ class employeeDB {
     }
 
     // Add a department
-    allDepartment(department) {
+    addDepartment(department) {
         return this.connection.promise().query("INSERT INTO department SET ?", department);
     }
 
