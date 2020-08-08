@@ -4,6 +4,12 @@ const db = require("./db");
 
 init();
 
+// initial function at NPM start
+function init() {
+    runPrompts();
+}
+
+
 // View all employees
 function viewAllEmployees() {
     db.allEmployees()
