@@ -70,7 +70,6 @@ function runPrompts() {
             case "ADD_DEPARTMENT":
                 createDepartment();
                 break;
-
             case "ADD_ROLE":
                 createRole();
                 break;
@@ -174,6 +173,5 @@ function createDepartment() {
 
 // Quit the application
 function quit() {
-    console.log("Thank you for using Employee Tracker application");
     process.exit();
 }
