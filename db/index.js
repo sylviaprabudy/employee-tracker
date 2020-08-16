@@ -6,7 +6,6 @@ class employeeDB {
         this.connection = connection;
     }
 
-
     // Show all employees
     allEmployees() {
         return this.connection.promise().query(
@@ -18,8 +17,7 @@ class employeeDB {
     addEmployee(employee) {
         return this.connection.promise().query("INSERT INTO employee SET ?", employee);
     }
-
-
+    
     // Show all managers
     allManagers(employeeId) {
         return this.connection.promise().query(
@@ -27,7 +25,6 @@ class employeeDB {
             employeeId
         );
     }
-
 
     // Show all roles
     allRoles() {
@@ -40,7 +37,6 @@ class employeeDB {
     addRole(role) {
         return this.connection.promise().query("INSERT INTO role SET ?", role);
     }
-
 
     // Show all departments
     allDepartments() {
