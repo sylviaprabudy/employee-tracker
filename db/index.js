@@ -1,7 +1,7 @@
 const connection = require("./connection");
 
 class employeeDB {
-    
+
     constructor(connection) {
         this.connection = connection;
     }
@@ -17,7 +17,16 @@ class employeeDB {
     addEmployee(employee) {
         return this.connection.promise().query("INSERT INTO employee SET ?", employee);
     }
-    
+
+    // Update the given employee's role
+    updateEmployeeRole(employeeId, roleId) {
+        return this.connection.promise().query(
+            "UPDATE employee SET role_id = ? WHERE id = ?",
+            [roleId, employeeId]
+        );
+    }
+
+
     // Show all managers
     allManagers(employeeId) {
         return this.connection.promise().query(
